@@ -15,6 +15,8 @@ public class EnemyController : MonoBehaviour
     Animator anim;
     Rigidbody2D rig;
     AudioSource brokenSound;
+    public bool cogFixable = true;
+
     // Start is called before the first frame update
     void Start()
     {

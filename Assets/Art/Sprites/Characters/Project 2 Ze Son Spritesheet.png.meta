@@ -1,0 +1,642 @@
+fileFormatVersion: 2
+guid: bf650b7003e3e6a48be47cf89902598e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5868244753059648516
+    second: Project 2 Ze Son Spritesheet_3
+  - first:
+      213: 3850531486464506262
+    second: Project 2 Ze Son Spritesheet_4
+  - first:
+      213: -1155246672349532150
+    second: Project 2 Ze Son Spritesheet_5
+  - first:
+      213: 2969234169711840611
+    second: Project 2 Ze Son Spritesheet_6
+  - first:
+      213: 3808941274262553288
+    second: Project 2 Ze Son Spritesheet_7
+  - first:
+      213: -2068766588204042213
+    second: Project 2 Ze Son Spritesheet_8
+  - first:
+      213: 7307666128706712983
+    second: Project 2 Ze Son Spritesheet_9
+  - first:
+      213: 9004765030965164351
+    second: Project 2 Ze Son Spritesheet_10
+  - first:
+      213: 6299632221241638460
+    second: Project 2 Ze Son Spritesheet_11
+  - first:
+      213: -4313859202352653178
+    second: Project 2 Ze Son Spritesheet_12
+  - first:
+      213: -2542857958188793562
+    second: Project 2 Ze Son Spritesheet_13
+  - first:
+      213: -7933591078143144589
+    second: Project 2 Ze Son Spritesheet_14
+  - first:
+      213: -7552100207296004249
+    second: Project 2 Ze Son Spritesheet_15
+  - first:
+      213: 4004703085157890460
+    second: Project 2 Ze Son Spritesheet_17
+  - first:
+      213: -6681535645052759624
+    second: Project 2 Ze Son Spritesheet_18
+  - first:
+      213: 5749447967933883403
+    second: Project 2 Ze Son Spritesheet_19
+  - first:
+      213: 3615996732046511240
+    second: Project 2 Ze Son Spritesheet_20
+  - first:
+      213: 1314848439032389716
+    second: Project 2 Ze Son Spritesheet_22
+  - first:
+      213: -8367907434230188778
+    second: Project 2 Ze Son Spritesheet_23
+  - first:
+      213: -1304629299664191830
+    second: Project 2 Ze Son Spritesheet_24
+  - first:
+      213: -7656059476165424840
+    second: Project 2 Ze Son Spritesheet_25
+  - first:
+      213: -708133660212752178
+    second: Project 2 Ze Son Spritesheet_26
+  - first:
+      213: -292983387784973620
+    second: Project 2 Ze Son Spritesheet_27
+  - first:
+      213: 4218388529724522097
+    second: Project 2 Ze Son Spritesheet_28
+  - first:
+      213: 7623728480540711306
+    second: Project 2 Ze Son Spritesheet_33
+  - first:
+      213: 7228386815336692947
+    second: Project 2 Ze Son Spritesheet_34
+  - first:
+      213: 6716324568003176507
+    second: Idle 4
+  - first:
+      213: 648910513479986060
+    second: Idle 1
+  - first:
+      213: -140909015671908482
+    second: Project 2 Ze Son Spritesheet_40
+  - first:
+      213: -7014493838588140929
+    second: Project 2 Ze Son Spritesheet_41
+  - first:
+      213: -5297376197096271952
+    second: Idle 2
+  - first:
+      213: -6206010409243353597
+    second: Idle 3
+  - first:
+      213: -1520432356772364031
+    second: Project 2 Ze Son Spritesheet_44
+  - first:
+      213: -7333980666564895749
+    second: Project 2 Ze Son Spritesheet_45
+  - first:
+      213: 8617806653076466545
+    second: Project 2 Ze Son Spritesheet_46
+  - first:
+      213: -1981600288962321710
+    second: Project 2 Ze Son Spritesheet_47
+  - first:
+      213: -4690445855936926118
+    second: Idle 5
+  - first:
+      213: -407604163751468587
+    second: Project 2 Ze Son Spritesheet_49
+  - first:
+      213: -3000944283867264277
+    second: Project 2 Ze Son Spritesheet_50
+  - first:
+      213: -3575863914133907163
+    second: Idle 8
+  - first:
+      213: 4376356020079885331
+    second: Project 2 Ze Son Spritesheet_52
+  - first:
+      213: -7908084014571997225
+    second: Idle 6
+  - first:
+      213: -3057067250527871278
+    second: Idle 7
+  - first:
+      213: -2043305000708479122
+    second: Project 2 Ze Son Spritesheet_55
+  - first:
+      213: 7634838557850508539
+    second: Project 2 Ze Son Spritesheet_56
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Project 2 Ze Son Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 3730
+        width: 991
+        height: 900
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4049b29f281307150800000000000000
+      internalID: 5868244753059648516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Project 2 Ze Son Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 2284
+        y: 3730
+        width: 904
+        height: 909
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6997c276cf5df6530800000000000000
+      internalID: 3850531486464506262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Project 2 Ze Son Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 3363
+        y: 3730
+        width: 787
+        height: 900
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0077a2b54db7ffe0800000000000000
+      internalID: -1155246672349532150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Project 2 Ze Son Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3730
+        width: 961
+        height: 900
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c24eb688e31cd430800000000000000
+      internalID: 3808941274262553288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Project 2 Ze Son Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 3037
+        y: 4556
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b18b6e2bfb34a43e0800000000000000
+      internalID: -2068766588204042213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Project 2 Ze Son Spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 4363
+        y: 3730
+        width: 809
+        height: 924
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37dc11ac2f836e190800000000000000
+      internalID: -7933591078143144589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Project 2 Ze Son Spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2650
+        width: 769
+        height: 900
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76fb7fbcfdc813790800000000000000
+      internalID: -7552100207296004249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Project 2 Ze Son Spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 2650
+        width: 616
+        height: 900
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c993fb5fc30939730800000000000000
+      internalID: 4004703085157890460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Project 2 Ze Son Spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 2363
+        y: 2650
+        width: 754
+        height: 900
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b046a4707742acf40800000000000000
+      internalID: 5749447967933883403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Project 2 Ze Son Spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 3378
+        y: 2650
+        width: 810
+        height: 900
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 450a00e50b74f3210800000000000000
+      internalID: 1314848439032389716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Project 2 Ze Son Spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 4315
+        y: 2650
+        width: 857
+        height: 900
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec0958910343c26f0800000000000000
+      internalID: -708133660212752178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle 4
+      rect:
+        serializedVersion: 2
+        x: 3386
+        y: 1090
+        width: 733
+        height: 900
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b38ee082c9d253d50800000000000000
+      internalID: 6716324568003176507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle 1
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 1090
+        width: 727
+        height: 900
+      alignment: 9
+      pivot: {x: 0.46, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8badf68ca4610900800000000000000
+      internalID: 648910513479986060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle 2
+      rect:
+        serializedVersion: 2
+        x: 1294
+        y: 1090
+        width: 705
+        height: 900
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bf877a5a60fb76b0800000000000000
+      internalID: -5297376197096271952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle 3
+      rect:
+        serializedVersion: 2
+        x: 2337
+        y: 1090
+        width: 709
+        height: 900
+      alignment: 9
+      pivot: {x: 0.56, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30e5ca4e962dfd9a0800000000000000
+      internalID: -6206010409243353597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle 5
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 0
+        width: 744
+        height: 900
+      alignment: 9
+      pivot: {x: 0.44, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5e2da6585038eeb0800000000000000
+      internalID: -4690445855936926118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle 8
+      rect:
+        serializedVersion: 2
+        x: 3408
+        y: 0
+        width: 721
+        height: 900
+      alignment: 9
+      pivot: {x: 0.41, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52919e047baff5ec0800000000000000
+      internalID: -3575863914133907163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle 6
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 0
+        width: 707
+        height: 900
+      alignment: 9
+      pivot: {x: 0.44, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d7bd71dc77d04290800000000000000
+      internalID: -7908084014571997225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle 7
+      rect:
+        serializedVersion: 2
+        x: 2413
+        y: 0
+        width: 740
+        height: 900
+      alignment: 9
+      pivot: {x: 0.38, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2de5ecd588d1395d0800000000000000
+      internalID: -3057067250527871278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -7,6 +7,8 @@ public class Projectile : MonoBehaviour
     Rigidbody2D rig;
     RubyController owner;
     public ParticleSystem blamSystem;
+    [SerializeField] AudioClip hitSound;
+    [SerializeField] AudioClip successfulHitSound;
     
     // Start is called before the first frame update
     void Awake()
@@ -29,8 +31,16 @@ public class Projectile : MonoBehaviour
         EnemyController enemy = other.gameObject.GetComponent<EnemyController>();
         if(enemy != null)
         {
-            enemy.Fix();
-            owner.CountRobotFixed();
+            if (enemy.cogFixable)
+            {
+                enemy.Fix();
+                owner.CountRobotFixed();
+            }
+            owner.PlaySound(successfulHitSound);
+        }
+        else
+        {
+            owner.PlaySound(hitSound);
         }
 
         Instantiate(blamSystem, transform.position, Quaternion.identity);

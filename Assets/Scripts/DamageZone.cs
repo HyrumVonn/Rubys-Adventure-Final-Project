@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DamageZone : MonoBehaviour
 {
+    public int damagePerSecond = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +17,7 @@ public class DamageZone : MonoBehaviour
         
         if(controller != null)
         {
-            controller.ChangeHealth(-1);
+            controller.ChangeHealth(-damagePerSecond);
         }
     }
 

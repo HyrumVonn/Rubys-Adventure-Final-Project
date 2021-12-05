@@ -26,14 +26,25 @@ public class RubyController : MonoBehaviour
     public AudioClip hitSound;
     public ParticleSystem healEffect;
     public ParticleSystem ouchEffect;
+    public ParticleSystem jumpEffect;
     bool movementEnabled = true;
     int robotsFixed = 0;
     bool gameEnded = false;
     AudioSource musicPlayer;
+    bool shadowJumping = false;
+    public ShadowJump shadow;
+    public float fullShadowAmount = 3f;
+    public float shadowRechargeRate = .5f;
+    float rechargeAmount;
+    public SuperDropper superToDrop;
+    public float superHoldTime = 10f;
+    float holdTime;
+    public bool holdingSuper = false;
 
     [SerializeField] AudioClip loseMusic;
 
     [SerializeField] AudioClip winMusic;
+    [SerializeField] AudioClip deathSound;
 
     int cogCount = 4;
 
@@ -42,6 +53,7 @@ public class RubyController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Physics2D.IgnoreCollision(GetComponent<Collider2D>(), shadow.GetComponent<Collider2D>(), true);
 
         musicPlayer = GameObject.FindWithTag("Music").GetComponent<AudioSource>();
         rig = GetComponent<Rigidbody2D>();
@@ -50,6 +62,10 @@ public class RubyController : MonoBehaviour
 
         currentHealth = maxHealth;
         audioSource = GetComponent<AudioSource>();
+
+        rechargeAmount = fullShadowAmount;
+        holdTime = 0;
+
     }
 
     public void ChangeHealth(int amount)
@@ -65,12 +81,16 @@ public class RubyController : MonoBehaviour
                 currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
                 invincibleTimer = timeInvincible;
                 isInvincible = true;
-                PlaySound(hitSound);
                 anim.SetTrigger("Hit");
                 Instantiate(ouchEffect, transform.position, Quaternion.identity);
                 if(currentHealth <= 0)
                 {
                     DeathProcess();
+                    PlaySound(deathSound);
+                }
+                else
+                {
+                   PlaySound(hitSound);
                 }
             }
         }
@@ -94,6 +114,7 @@ public class RubyController : MonoBehaviour
 
     void DeathProcess()
     {
+        shadow.enabled = false;
         movementEnabled = false;
         Destroy(GetComponent<SpriteRenderer>());
         rig.simulated = false;
@@ -101,6 +122,13 @@ public class RubyController : MonoBehaviour
         gameEnded = true;
         musicPlayer.clip = loseMusic;
         musicPlayer.Play();
+    }
+
+    public void PickupSuper()
+    {
+        holdingSuper = true;
+        holdTime = superHoldTime;
+        UISuperBar.instance.SetValue(holdTime / superHoldTime);
     }
 
     public void PlaySound(AudioClip clip)
@@ -114,7 +142,37 @@ public class RubyController : MonoBehaviour
         position.x = position.x + speed * move.x * Time.deltaTime;
         position.y = position.y + speed * move.y * Time.deltaTime;
 
-        rig.MovePosition(position);
+        if (movementEnabled)
+        {
+            if (shadowJumping)
+            {
+                rig.MovePosition(new Vector2(transform.position.x, transform.position.y));
+
+                Vector2 shadowPosition = shadow.transform.position;
+                shadowPosition.x = shadowPosition.x + speed * 2 * move.x * Time.deltaTime;
+                shadowPosition.y = shadowPosition.y + speed * 2 * move.y * Time.deltaTime;
+                shadow.rig.MovePosition(shadowPosition);
+            }
+            else
+            {
+                rig.MovePosition(position);
+                shadow.rig.MovePosition(position);
+            }
+        }
+    }
+
+    void ShadowJumpStart()
+    {
+        shadowJumping = true;
+    }
+
+    void ShadowJumpEnd()
+    {        
+        shadowJumping = false;
+        Instantiate(jumpEffect, shadow.transform.position, Quaternion.identity);
+        Instantiate(jumpEffect, transform.position, Quaternion.identity);
+        transform.position = shadow.transform.position;
+        shadow.rig.MovePosition(transform.position);
     }
 
     void Launch()
@@ -194,9 +252,68 @@ public class RubyController : MonoBehaviour
             Application.Quit();
         }
 
-        if(movementEnabled)
+
+
+        if (movementEnabled)
         {
-            if(Input.GetKeyDown(KeyCode.C))
+
+            if(holdingSuper)
+            {
+                if (holdTime > 0)
+                {
+                    if (Input.GetKeyDown(KeyCode.LeftShift))
+                    {
+                        Instantiate(superToDrop, transform.position, Quaternion.identity).SetOwner(this);
+                    }
+
+                    holdTime -= Time.deltaTime;
+                    UISuperBar.instance.SetValue(holdTime / superHoldTime);
+                }
+                else
+                {
+                    holdingSuper = false;
+                    UISuperBar.instance.enabled = false;
+                }
+            }
+            else
+            {
+
+            }
+
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                ShadowJumpStart();
+            }
+
+            if (Input.GetKeyUp(KeyCode.Space))
+            {
+                ShadowJumpEnd();
+            }
+
+            if (shadowJumping)
+            {
+                rechargeAmount -= Time.deltaTime;
+                if (rechargeAmount <= 0f)
+                {
+                    ShadowJumpEnd();
+                }
+            }
+            else
+            {
+                if (rechargeAmount >= fullShadowAmount)
+                {
+                    rechargeAmount = fullShadowAmount;
+                }
+                else
+                {
+                    rechargeAmount = rechargeAmount + shadowRechargeRate * Time.deltaTime;
+                }
+            }
+
+            UIJumpBar.instance.SetValue(rechargeAmount / fullShadowAmount);
+
+
+            if (Input.GetKeyDown(KeyCode.C))
             {
                 if(cogCount >= 1)
                 {
@@ -207,18 +324,23 @@ public class RubyController : MonoBehaviour
                 }
             }
 
+
             if(Input.GetKeyDown(KeyCode.X))
             {
                 RaycastHit2D hit = Physics2D.Raycast(rig.position + Vector2.up * 0.2f, lookDirection, 1.5f, LayerMask.GetMask("NPC"));
                 if(hit.collider != null)
                 {
-                    if(robotsFixed >= 4)
-                    {
-                        GoToNextLevel();
-                    }
                     NonPlayerCharacter npc = hit.collider.GetComponent<NonPlayerCharacter>();
                     if(npc != null)
                     {
+                        if(npc.sendToNextLevel)
+                        {
+                            if(robotsFixed >= 4)
+                            {
+                                GoToNextLevel();
+                            }
+                        }
+
                         npc.DisplayDialog(robotsFixed);
                     }
                 }
@@ -260,5 +382,6 @@ public class RubyController : MonoBehaviour
         anim.SetFloat("Look X", lookDirection.x);
         anim.SetFloat("Look Y", lookDirection.y);
         anim.SetFloat("Speed", move.magnitude);
+
     }
 }
